@@ -1,14 +1,19 @@
+//importing type comp
+
 import {ADD_BOOK} from '../types/actionTypes';
 import {DELETE_BOOK} from '../types/actionTypes';
 import {DELETE_ALL} from '../types/actionTypes';
 import {ADD_MEMBER} from '../types/actionTypes';
 import {DELETE_MEMBER} from '../types/actionTypes';
 
+
+//initial state of book and members
 const initState = {
     currentBooks: [],
     members:[]
 }
 
+//reducers
 const rootReducer = (state = initState, action) => {
 switch(action.type){
     case ADD_BOOK: 
@@ -46,5 +51,6 @@ switch(action.type){
 
 }
 
+//export to root for 
 export default rootReducer;
 

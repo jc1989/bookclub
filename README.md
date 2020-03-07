@@ -1,3 +1,9 @@
+Welcome to the Book Club app! In this application, you can create a group of readers and add books to your club list so you can read along and compete against eachother. Simply type in the name of a member, and click 'Add'. To remove a member, click the 'x' located next to each member name. If you want to add a book, type in the Title, Description, Length, and a URL for the book cover. Happy reading!
+
+JC1989 @ 2020
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

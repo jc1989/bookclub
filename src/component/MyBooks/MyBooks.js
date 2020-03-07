@@ -32,7 +32,7 @@ const MyBooks = ({books, deleteBooks, members, addMember, deleteMember}) => {
                     {members && members.map((item, i) => <li key={i}>{item} <span onClick={() => deleteMember(i)}>x</span></li>)}
                 </ul>
                 <AddBook/>
-                <button className="btn btn-primary" onClick={() => deleteBooks()}>Delete All</button>
+                <button className="btn btn-danger" onClick={() => deleteBooks()}>Erase Club</button>
                 <BookList books={books}/>                
         </div>        
     )

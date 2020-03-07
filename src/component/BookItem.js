@@ -1,8 +1,10 @@
+//imports
 import React from 'react';
 import {deleteBook } from '../redux/actions/action'
 import {connect} from'react-redux';
 import Pictures from '../component/Pictures'
 
+//book item view and delete 
 const BookItem = ({book, deleteBook}) => {
     return (
             <div className="col-md-4 mb-5 mt-3" key={book.id}>

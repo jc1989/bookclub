@@ -12,21 +12,21 @@ export const addBook = (book) => {
         payload: book
     }
 }
-//
+//delete action
 export const deleteBook = (book_id) => {
     return{
         type: DELETE_BOOK,
         payload: book_id
     }
 }
-
+//delete all books
 export const deleteBooks = () => {
     return{
         type: DELETE_ALL,
         
     }
 }
-
+//add member
 export const addMember= (text) => {
     return{
         type: ADD_MEMBER,
@@ -34,7 +34,7 @@ export const addMember= (text) => {
         
     }
 }
-
+//delete member
 export const deleteMember = (text) => {
     return{
         type: DELETE_MEMBER,
