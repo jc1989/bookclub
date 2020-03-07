@@ -1,25 +1,27 @@
+//importing functions & libraries
 import React from 'react';
-import logo from './logo.svg';
+import AddBook from './component/AddBook';
+import MyBooks from './component/MyBooks/MyBooks';
+import {Route} from 'react-router-dom';
+import BookDetail from './component/BookDetail';
+import { Pictures } from './component/Pictures';
+import Footer from './component/Footer.js'
+
 import './App.css';
 
+//App Components - Routes with rendered components
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route exact path="/" component={MyBooks}/>
+      <Route exact path="/detail" component={BookDetail}/>
+      <Route path='/addbook' component={AddBook} />
+      <Route path='/pictures' component={Pictures} />
+      <Footer/>
     </div>
+    
+
   );
 }
 

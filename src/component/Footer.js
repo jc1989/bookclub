@@ -1,0 +1,9 @@
+import React from 'react';
+
+const Footer = () => {
+    return <div className="text-center fixed-bottom pt-2 pb-2" style={{background:'rgba(0.2)'}}>
+        Built by Josh
+    </div>
+}
+
+export default Footer
